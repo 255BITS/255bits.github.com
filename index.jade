@@ -3,47 +3,65 @@ html
   head
     style
       .content {
-        margin-left: 100px;
-        width: 1150px;
+        width: 1100px;
       }
       .content-block {
-        width: 300px;
+        width: 310px;
         float: left;
-        padding: 10px;
         margin: 10px;
         border: 1px solid #363;
-        border-radius: 10px;
+        background-color: #eee;
       }
-      a.content-header {
+      
+      .content-header {
+        text-align: center;
+        width:310px;
+        padding-top: 0.5em;
+        height: 1.5em;
+        background-color: #363;
+      }
+      a {
         text-decoration: none;
+      }
+      a  .content-header {
         font-size: 24pt;
+        color: white;
+      }
+      a {
+        display: inline;
       }
       header h1 {
         padding-left: 10px;
-        color: #363;
       }
       body {
-        background-color: #333;
+        background-color: #ddd;
       }
       .content {
-        background-color: #ddd;
-        height: 800px;
-        padding: 30px;
+        padding: 5px;
+      }
+      .content-description {
+        font-size: 12pt;
+        padding: 10px;
+        color: #363;
       }
   body
     
     .content
       header
-        h1 255 BITS
-      .content-block
-        a(href='http://blog.255bits.com').content-header Blog
-        .content-description The 255 BITS blog.
-      .content-block
-        a(href='http://blog.255bits.com/projects/').content-header Tools
-        .content-description The 255 BITS toolset.
-      .content-block
-        a(href='http://blog.255bits.com/contact/').content-header Consulting
-        .content-description Learn more.
-      .content-block
-        a(href='https://github.com/255BITS').content-header GitHub Page
-        .content-description The 255 BITS GitHub account.
+        h1 255 BITS LLC
+      a(href='http://blog.255bits.com') 
+        .content-block
+          .content-header Blog
+          .content-description The 255 BITS blog.
+      a(href='http://blog.255bits.com/projects/')
+        .content-block
+          .content-header Projects
+          .content-description The 255 BITS toolset.
+      a(href='http://blog.255bits.com/contact/')
+        .content-block
+          .content-header Consulting
+          .content-description Learn more.
+      a(href='https://github.com/255BITS')
+        .content-block
+          .content-header GitHub Page
+          .content-description The 255 BITS GitHub account.
